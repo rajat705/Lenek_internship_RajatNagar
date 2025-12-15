@@ -35,7 +35,14 @@ export default function Notes() {
       <p>Total notes: {noteCount}</p>
 
       <br />
-
+      <ul>
+        {notes.map((note) => (
+          <li key={note.id}>
+            {note.text}{" "}
+            
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
