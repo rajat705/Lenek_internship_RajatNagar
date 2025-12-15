@@ -35,11 +35,13 @@ export default function Notes() {
       <p>Total notes: {noteCount}</p>
 
       <br />
-      <ul>
+     <ul>
         {notes.map((note) => (
           <li key={note.id}>
             {note.text}{" "}
-            
+            <button onClick={() => deleteNote(note.id)}>
+              Delete
+            </button>
           </li>
         ))}
       </ul>
