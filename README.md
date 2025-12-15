@@ -1,5 +1,57 @@
 # React + TypeScript + Vite
 
+Create project
+
+```sh
+ npm create vite@latest Lenek_internship_RajatNagar -- --template react-ts
+```
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/rajat705/Lenek_internship_RajatNagar.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```sh
+    cd Lenek_internship_RajatNagar
+    ```
+
+3. Install the dependencies:
+
+    ```sh
+    npm install
+    ```
+    npm install
+
+     ```sh
+    npm install -D tailwindcss@3.4.17 postcss autoprefixer
+    ```
+
+      ```sh
+    npx tailwindcss init -p
+    ```
+  Install libraries:
+
+  ```sh
+    npm install react-router-dom zustand axios
+   ```
+
+
+### Running the Project
+
+1. Start the development server:
+
+    ```sh
+    npm run dev
+    ```
+
+2. Open your browser and navigate to:
+    ```sh
+    http://localhost:5173
+    ```
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
