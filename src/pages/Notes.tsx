@@ -26,20 +26,21 @@ export default function Notes() {
       <br />
 
       {/* Button to add a new note */}
-      <button onClick={handleAdd}>Add Note</button>
+      <button className="bg-rose-500 m-1 p-1 text-white hover:bg-sky-700" onClick={handleAdd}>Add Note</button>
 
       <br />
       <br />
       {/* Display the total number of notes */}
-      <p>Total notes: {noteCount}</p>
+      <p className="text-red-600">Total notes: {noteCount}</p>
 
       <br />
       {/* List of notes */}
       <ul>
         {notes.map((note) => (
           <li key={note.id}>
-            {note.text} {/* Delete button for each note */}
-            <button onClick={() => deleteNote(note.id)}>Delete</button>
+         
+            <button className="bg-red-500 mt-2 mr-4 pl-2 pr-2 text-white hover:bg-sky-700" onClick={() => deleteNote(note.id)}> Delete </button>
+               {note.text} {/* Delete button for each note */}
           </li>
         ))}
       </ul>

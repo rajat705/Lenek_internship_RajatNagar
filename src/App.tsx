@@ -10,8 +10,8 @@ export default function App() {
       <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
           {/* Navigation links */}
         <nav className="flex justify-center gap-6 mb-6 font-medium">
-          <Link to="/">Home</Link>
-          <Link to="/notes">Notes</Link>
+          <button className="bg-blue-500 text-white m-1 p-1 hover:bg-sky-700"><Link to="/">Home</Link></button>
+          <button className="bg-blue-500 text-white m-1 p-1 hover:bg-sky-700"><Link to="/notes">Notes</Link></button>
         </nav>
       {/* Routes for different pages */}
         <Routes>
